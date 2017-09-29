@@ -17,7 +17,7 @@ Ce fichier charge les éléments suivants:
 
 ## Fonctionnement
 
-((Apporter des connaisances culturels qui sont à la fois récreative et facile d'accès, avec comme référence l'affichage des heures.))
+À chaque heure qui passe, un documentaire de national géographique passe. Durant le temps de visionement une barre noire défile depuia le bas de l'écran jusqu'au haut. Cette barre représente les minutes durant la diffusion de la vidéo.
 
 Automne 2017  
 Eracom, Lausanne
