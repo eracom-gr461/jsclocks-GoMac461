@@ -17,7 +17,7 @@ Ce fichier charge les éléments suivants:
 
 ## Fonctionnement
 
-À chaque heure qui passe, un documentaire de national géographique passe. Durant le temps de visionement une barre noire défile depuia le bas de l'écran jusqu'au haut. Cette barre représente les minutes durant la diffusion de la vidéo.
+À chaque heure qui passe, un documentaire de national géographique passe. Durant le temps de visionement une barre noire défile depuis le bas de l'écran jusqu'au haut. Cette barre représente les minutes durant la diffusion de la vidéo.
 
 Automne 2017  
 Eracom, Lausanne
