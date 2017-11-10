@@ -26,7 +26,12 @@ var listeVideosNature = [
   'vit76dx4ZZI', //	16	Pinguin
   'ElodfqSiPFg', //	17	flying monsters
   'j8w9IF7xhYw', //	18	prehistoric
-  ''
+  '_A7OLjfBD4Y', //	19	Prison
+  'QH-kNnq7mFM', //	20	Life in Japan
+  '7b6kxXrug1Q', //	21	architecture
+  'Cq1oFhTINXE', //	22	climate change
+  'tmWV5ZnKOAg', //	23	Universe
+  'Jn7VcOU3x2g', //	24	secretes of the universe
 
   ];
 
