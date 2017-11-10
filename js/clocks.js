@@ -8,11 +8,27 @@
 // Définir la liste des vidéos:
 
 var listeVideosNature = [
-  'fImy-43Z0Yo', // Tigers Revenge
-  '3alvkCIuRlM', // African Animals Wildlife
-  'rmmu4mqERaQ', // Underwater Earth
-  'i2fRuDP3jpY' // Deep Oceans ~ LOST WORLD UNDERWATER
-];
+  'fImy-43Z0Yo', //	 1	Tigers Revenge
+  '3alvkCIuRlM', //	 2	African Animals Wildlife
+  'rmmu4mqERaQ', //	 3	Underwater Earth
+  'i2fRuDP3jpY', //	 4	Deep Oceans ~ LOST WORLD UNDERWATER
+  'Gd3tN4H0NjY', //	 5	Pentagon
+  'M-56zHYx-CU', //	 6	America
+  'pxqIlaVBoH0', //	 7	Birds
+  'JGK4rGx2YZg', //	 8	Russia
+  'Gri5mUezu50', //	 9	Asia
+  'lAOH2ImdfD4', //	10	Asia pyramids
+  'c_uL1bZii6k', //	11	Caligurla
+  'pR33Ev1QKGY', //	12	Alexandre
+  'Ackx7Q0dQLY', //	13	Gods and Godesses
+  'fq-SQRxc7f8', //	14	Amazon Forest
+  'P1BwCGv7GK8', //	15	Museum
+  'vit76dx4ZZI', //	16	Pinguin
+  'ElodfqSiPFg', //	17	flying monsters
+  'j8w9IF7xhYw', //	18	prehistoric
+  ''
+
+  ];
 
 
 // Méthode: https://developers.google.com/youtube/iframe_api_reference
@@ -30,8 +46,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '360',
-    width: '640',
+    height: '100%',
+    width: '100%',
     loadPlaylist:{
         listType:'playlist',
         list:listeVideosNature,
@@ -84,7 +100,7 @@ function stopVideo() {
 
 /*
  * Un petit script mesurant l'écoulement du temps
- * 
+ *
  * Source: https://codepen.io/Tcip/pen/BNKjeN
  * Auteur: Mikael Elmblad, tcip.se
 */
@@ -111,7 +127,7 @@ function metronome() {
 
   // identifier le bloc "horloge"
   var horloge = document.getElementById("horloge");
-  
+
   // 2: on affiche l'heure dans notre objet "horloge"
 
   horloge.innerHTML = date.toLocaleTimeString();
@@ -130,4 +146,3 @@ function metronome() {
 
 
 }
-

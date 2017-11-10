@@ -1,27 +1,7 @@
 /*
  * Chargement des fontes
  * Voir : http://cours-web.ch/css/typographie
-*/
-
-
-@font-face {
-    font-family: 'notcouriersans';
-    src: url('../fonts/NotCourierSans.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'notcouriersans';
-    src: url('../fonts/NotCourierSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-html {
-	font-family: notcouriersans, monospace;
-}
+*/}
 
 
 /*
@@ -35,4 +15,3 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-

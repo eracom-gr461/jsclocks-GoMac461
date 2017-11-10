@@ -12,19 +12,27 @@
         #horloge {
             position: absolute;
             border: 1px solid black;
+			color: black;
             width: 100%;
-            background: #fff;
+            background: #000;
             left: 0px;
         }
-        
+		#ligne {
+			position: absolute;
+			height: 10px;
+			color: black
+		}
+
         </style>
     </head>
     <body>
-    
+
         <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"> Lecteur Vidéo </div>
 
-        <time class="temps" id="horloge">00:00:00</time>
-    
+        <time class="temps" id="horloge"></time>
+
+		<hr id="ligne">
+
     </body>
 </html>
