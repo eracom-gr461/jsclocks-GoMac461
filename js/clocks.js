@@ -59,7 +59,7 @@ function onYouTubeIframeAPIReady() {
         index:parseInt(1),
         suggestedQuality:'large'
      },
-	 playerVars: {'autoplay':1 , 'controls':0, 'disablekb':1, 'modestbranding':1, 'showinfo':0  },
+	 playerVars: {'autoplay':1 , 'controls':0, 'disablekb':1, 'modestbranding':1, 'showinfo':0, 'rel':0, },
 
     events: {
       'onReady': onPlayerReady,
