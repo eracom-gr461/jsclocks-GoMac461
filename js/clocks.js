@@ -56,9 +56,11 @@ function onYouTubeIframeAPIReady() {
     loadPlaylist:{
         listType:'playlist',
         list:listeVideosNature,
-        index:parseInt(0),
+        index:parseInt(1),
         suggestedQuality:'large'
      },
+	 playerVars: {'autoplay':1 , 'controls':0, 'disablekb':1, 'modestbranding':1, 'showinfo':0  },
+
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
@@ -81,7 +83,7 @@ function onPlayerReady(event) {
 var done = false;
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
-    // setTimeout(stopVideo, 3000);
+     setTimeout(stopVideo, 3600000);
 
     // On pourrait programmer le lancement de la prochaine video...
     player.nextVideo();
@@ -90,7 +92,7 @@ function onPlayerStateChange(event) {
   }
 }
 function stopVideo() {
-  player.stopVideo();
+  player.stopVideo(listeVideosNature);
 }
 
 // https://stackoverflow.com/questions/18266818/about-use-youtube-player-api-loadplaylist
@@ -135,11 +137,11 @@ function metronome() {
 
   // 2: on affiche l'heure dans notre objet "horloge"
 
-  horloge.innerHTML = date.toLocaleTimeString();
-  horloge.style.top = seconde+'px';
+  var position = minute * 1.66666666667;
+  horloge.style.bottom = position +'vh';
 
   // afin de mieux tester, on lance la prochaine vidéo toutes les 30 secondes...
-  if ( seconde == 0 || seconde == 15 || seconde == 45 || seconde == 30 ) {
+  if ( Hours == 1 ) {
 
     // lancer prochaine video.
     player.nextVideo();
